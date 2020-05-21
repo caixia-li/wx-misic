@@ -1,0 +1,25 @@
+<view class="player-container" style="background:url('{{picUrl}}') center/cover no-repeat"></view>
+<view class="player-mask"></view>
+
+<view class="player-info">
+  <view class="player-disc {{isPlaying?'play':''}}" bindtap="onChangeLyricShow"  hidden="{{isLyricShow}}">
+    <image class="player-img  rotation {{isPlaying?'':'rotation-paused'}}" src="{{picUrl}}"></image>
+  </view>
+</view>
+
+<!-- 歌词 -->
+<view hidden="{{!isLyricShow}}" bindtap="onChangeLyricShow" class="lyric-box">
+<lyric isLyricShow="{{isLyricShow}}" lyric="{{lyric}}" class="lyric-box lyric"></lyric>
+</view>
+
+<!-- 进度条 -->
+<view class="progress-bar">
+<progress-bar bindmusicEnd="onNext" bind:timeUpdate="timeUpdate" bind:musicPlay="musicPlay" bind:musicPause="musicPause"></progress-bar>
+</view>
+
+<!-- 播放控制面板 -->
+<view class='control'>
+  <text class="iconfont icon-shangyishoushangyige" bindtap="onPrev"></text>
+  <text class="iconfont {{isPlaying?'icon-zanting1':'icon-bofang1'}}" bindtap="togglePlaying"></text>
+  <text class='iconfont icon-xiayigexiayishou' bindtap="onNext"></text>
+</view>

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/music/music",
+    "pages/mine/mine",
+    "pages/demo/demo",
+    "pages/musiclist/musiclist",
+    "pages/player/player",
+    "components/lyric/lyric",
+    "pages/blog/blog",
+    "pages/blog-edit/blog-edit",
+    "pages/blog-comment/blog-comment",
+    "pages/mine-bloghistory/mine-bloghistory",
+    "pages/mine-playhistory/mine-playhistory"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "/assets/images/music.png",
+        "selectedIconPath": "/assets/images/selectmusic.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "发现",
+        "iconPath": "/assets/images/finder.png",
+        "selectedIconPath": "/assets/images/finder1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/images/min.png",
+        "selectedIconPath": "/assets/images/selectmin.png"
+      }
+    ],
+    "selectedColor": "#1296db"
+  }
+}

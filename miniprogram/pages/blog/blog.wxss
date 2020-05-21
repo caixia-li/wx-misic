@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  background-color: #fff;
+  height: 100rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  box-sizing: border-box;
+}
+
+.header .icon-fabu {
+  font-size: 48rpx;
+}
+
+.publish-container {
+  width: 68rpx;
+  height: 68rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  flex: 1;
+}
+
+.blog-list {
+  margin-top: 120rpx;
+}
+
+.blog-panel {
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.blog-loading {
+  width: 100%;
+  padding: 20rpx;
+  background-color: #fff;
+  text-align: center;
+}
+
+.blog-tip {
+  margin-top: 320rpx;
+  text-align: center;
+  font-size: 40rpx; 
+  font-weight: bolder;
+  color: #1296db;
+}

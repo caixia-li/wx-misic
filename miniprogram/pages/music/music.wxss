@@ -1,0 +1,23 @@
+swiper-item {
+  width: 100%;
+  height: 200rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 200rpx;
+}
+.music-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  flex-direction: row;
+  width: 97%;
+  margin: 0 auto;
+}
+@media screen and (max-width:375px){
+  .music-list{
+    width: 97%;
+  }
+}

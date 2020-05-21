@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "blog-cart": "/components/blog-cart/blog-cart",
+    "blog-control": "/components/blog-control/blog-control"
+  },
+  "navigationBarTitleText": "正文"
+}

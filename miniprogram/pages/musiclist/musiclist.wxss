@@ -1,0 +1,48 @@
+.detail-container {
+  height: 320rpx;
+  /* filter: blur(40rpx); */
+  opacity: 0.4;
+}
+
+.detail-mask {
+  position: absolute;
+  width: 100%;
+  height: 320rpx;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.detail-img {
+  width: 280rpx;
+  height: 280rpx;
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  border-radius: 7rpx;
+}
+
+.detail-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.detail view {
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+}
+.detail .detail-nm {
+  font-size: 36rpx;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 0px 10px;
+  overflow: hidden;
+}

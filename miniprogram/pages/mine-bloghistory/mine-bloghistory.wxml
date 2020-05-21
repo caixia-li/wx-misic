@@ -1,0 +1,11 @@
+<view class="blog-list">
+  <block wx:for="{{blogList}}" wx:key="_id">
+    <view class="blog-panel">
+      <blog-cart blog="{{item}}" bindtap="goComment" data-_id="{{item._id}}"></blog-cart>
+      <blog-control blog="{{item}}" blogId="{{item._id}}" iconfont="iconfont" icon-pinglun="icon-pinglun" icon-fenxiang="icon-fenxiang"></blog-control>
+    </view>
+  </block>
+</view>
+<view hidden="{{!isTouchBottom}}" class="blog-loading">
+  没有更多内容了
+</view>

@@ -1,0 +1,31 @@
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bindtap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container">
+      <search bindsearch="onSearch"></search>
+    </view>
+  </view>
+
+  <!-- 博客列表 -->
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel">
+        <blog-cart blog="{{item}}" bindtap="goComment" data-_id="{{item._id}}"></blog-cart>
+        <blog-control iconfont="iconfont" icon-pinglun="icon-pinglun" icon-fenxiang="icon-fenxiang" blogId="{{item._id}}" blog="{{item}}"></blog-control>
+      </view>
+    </block>
+    <view wx:if="{{isLoading}}" class="blog-loading">
+      没有更多内容了
+    </view>
+    <view hidden="{{isList}}" class="blog-tip">
+      暂时还没有发布该内容哦~
+    </view>
+  </view>
+
+  <!-- 底部弹出层 -->
+  <login modalShow="{{isBottomModalShow}}" bind:loginsuccess="onloginSuccess" bind:loginfail="onloginFail"></login>
+
+</view>

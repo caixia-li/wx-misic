@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 若不限制输入字数，设置maxlength="-1" -->
+  <textarea placeholder="分享新鲜事>..." class="content" bindinput="onInput" maxlength="140" auto-focus bindfocus="onFocus" bindblur="onBlur"></textarea>
+  <view class="img-list">
+    <!-- 显示图片列表 -->
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="image-wrap">
+        <i class="iconfont icon-shanchu" bindtap="onDelImage" data-index="{{index}}"></i>
+        <image class="image" src="{{item}}" mode="aspectFill" bindtap="onPreviewImage" data-index="{{index}}"></image>
+      </view>
+    </block>
+    <!-- 选择图片 -->
+    <view class="image-wrap selectphoto" bindtap="onChooseImage" hidden="{{!selectPhoto}}">
+      <i class="iconfont icon-jiahao add"></i>
+    </view>
+  </view>
+</view>
+<view class="footer" style="bottom:{{footerBottom}}px">
+  <text class="words-num">{{wordsNum}}</text>
+  <button class="send-btn" bindtap="onSend">发布</button>
+</view>

@@ -1,0 +1,3 @@
+<!--miniprogram/pages/demo/demo.wxml-->
+<button bindtap="music">获取音乐</button>
+<button bindtap="movie">获取电影</button>

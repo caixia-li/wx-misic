@@ -1,0 +1,10 @@
+.blog-panel {
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.blog-loading {
+  width: 100%;
+  padding: 20rpx;
+  background-color: #fff;
+  text-align: center;
+}
